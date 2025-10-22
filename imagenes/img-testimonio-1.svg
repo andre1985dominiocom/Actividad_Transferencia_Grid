@@ -1,0 +1,168 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgTest1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentTest1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="skinTone1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glowTest1">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <clipPath id="circleClip1">
+      <circle cx="200" cy="200" r="140"/>
+    </clipPath>
+  </defs>
+  
+  <!-- Fondo -->
+  <rect width="400" height="400" fill="url(#bgTest1)"/>
+  
+  <!-- Elementos decorativos de fondo -->
+  <circle cx="80" cy="80" r="100" fill="#10b981" opacity="0.08"/>
+  <circle cx="320" cy="320" r="120" fill="#3b82f6" opacity="0.08"/>
+  
+  <!-- Anillos decorativos -->
+  <circle cx="200" cy="200" r="170" fill="none" stroke="url(#accentTest1)" stroke-width="1" opacity="0.1"/>
+  <circle cx="200" cy="200" r="185" fill="none" stroke="url(#accentTest1)" stroke-width="1" opacity="0.08"/>
+  
+  <!-- Círculo principal para avatar -->
+  <circle cx="200" cy="200" r="150" fill="url(#accentTest1)" opacity="0.15" filter="url(#glowTest1)"/>
+  <circle cx="200" cy="200" r="140" fill="#1e293b" stroke="url(#accentTest1)" stroke-width="4" filter="url(#glowTest1)"/>
+  
+  <!-- Avatar mejorado - Mujer profesional -->
+  <g clip-path="url(#circleClip1)">
+    <!-- Cuello -->
+    <rect x="180" y="218" width="40" height="35" fill="url(#skinTone1)"/>
+    
+    <!-- Hombros y blusa -->
+    <ellipse cx="200" cy="290" rx="95" ry="80" fill="#10b981"/>
+    <path d="M 105 280 Q 140 270 175 275 L 175 320 L 105 330 Z" fill="#0d9488"/>
+    <path d="M 295 280 Q 260 270 225 275 L 225 320 L 295 330 Z" fill="#0d9488"/>
+    
+    <!-- Collar/accesorio -->
+    <ellipse cx="200" cy="253" rx="25" ry="8" fill="none" stroke="#fbbf24" stroke-width="2" opacity="0.8"/>
+    <circle cx="200" cy="261" r="4" fill="#fbbf24" opacity="0.9"/>
+    
+    <!-- Cabeza y cara -->
+    <ellipse cx="200" cy="170" rx="50" ry="58" fill="url(#skinTone1)"/>
+    
+    <!-- Orejas -->
+    <ellipse cx="150" cy="175" rx="8" ry="12" fill="#f59e0b"/>
+    <ellipse cx="250" cy="175" rx="8" ry="12" fill="#f59e0b"/>
+    
+    <!-- Aretes -->
+    <circle cx="150" cy="182" r="5" fill="#fbbf24" opacity="0.9" filter="url(#glowTest1)"/>
+    <circle cx="250" cy="182" r="5" fill="#fbbf24" opacity="0.9" filter="url(#glowTest1)"/>
+    
+    <!-- Cabello largo ondulado -->
+    <ellipse cx="200" cy="130" rx="60" ry="45" fill="#1e293b"/>
+    <path d="M 140 135 Q 135 160 140 180 Q 145 195 150 210" fill="#1e293b"/>
+    <path d="M 260 135 Q 265 160 260 180 Q 255 195 250 210" fill="#1e293b"/>
+    <ellipse cx="145" cy="145" rx="15" ry="45" fill="#1e293b" transform="rotate(-15 145 145)"/>
+    <ellipse cx="255" cy="145" rx="15" ry="45" fill="#1e293b" transform="rotate(15 255 145)"/>
+    
+    <!-- Flequillo -->
+    <path d="M 150 125 Q 155 115 165 120 Q 175 110 185 120 Q 195 110 205 120 Q 215 110 225 120 Q 235 115 245 125" fill="#1e293b"/>
+    
+    <!-- Cejas -->
+    <path d="M 170 160 Q 180 157 190 160" fill="none" stroke="#1e293b" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 230 160 Q 220 157 210 160" fill="none" stroke="#1e293b" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Ojos detallados -->
+    <ellipse cx="180" cy="172" rx="12" ry="10" fill="white"/>
+    <ellipse cx="220" cy="172" rx="12" ry="10" fill="white"/>
+    <circle cx="182" cy="172" r="7" fill="#1e293b"/>
+    <circle cx="222" cy="172" r="7" fill="#1e293b"/>
+    <circle cx="184" cy="170" r="3" fill="white" opacity="0.8"/>
+    <circle cx="224" cy="170" r="3" fill="white" opacity="0.8"/>
+    
+    <!-- Pestañas -->
+    <path d="M 168 167 Q 165 164 168 162" fill="none" stroke="#1e293b" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 232 167 Q 235 164 232 162" fill="none" stroke="#1e293b" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <!-- Nariz -->
+    <path d="M 200 175 L 200 188" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.3"/>
+    <ellipse cx="196" cy="190" rx="3" ry="2" fill="#f59e0b" opacity="0.3"/>
+    <ellipse cx="204" cy="190" rx="3" ry="2" fill="#f59e0b" opacity="0.3"/>
+    
+    <!-- Sonrisa con labios -->
+    <path d="M 182 200 Q 200 210 218 200" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 182 200 Q 200 207 218 200" fill="#ef4444" opacity="0.3"/>
+    
+    <!-- Rubor en mejillas -->
+    <ellipse cx="165" cy="185" rx="12" ry="8" fill="#ef4444" opacity="0.2"/>
+    <ellipse cx="235" cy="185" rx="12" ry="8" fill="#ef4444" opacity="0.2"/>
+  </g>
+  
+  <!-- Comillas decorativas más elaboradas -->
+  <g transform="translate(70, 50)">
+    <text x="0" y="0" font-family="Georgia, serif" font-size="70" fill="url(#accentTest1)" opacity="0.25" font-weight="bold">"</text>
+    <text x="5" y="5" font-family="Georgia, serif" font-size="70" fill="url(#accentTest1)" opacity="0.15" font-weight="bold">"</text>
+  </g>
+  
+  <g transform="translate(300, 340)">
+    <text x="0" y="0" font-family="Georgia, serif" font-size="70" fill="url(#accentTest1)" opacity="0.25" font-weight="bold">"</text>
+    <text x="-5" y="-5" font-family="Georgia, serif" font-size="70" fill="url(#accentTest1)" opacity="0.15" font-weight="bold">"</text>
+  </g>
+  
+  <!-- Estrellas de calificación mejoradas -->
+  <g transform="translate(200, 55)">
+    <g transform="translate(-50, 0)">
+      <polygon points="0,-10 2.5,-3.5 10,-2.5 4,3 6,10 0,6 -6,10 -4,3 -10,-2.5 -2.5,-3.5" fill="#fbbf24" filter="url(#glowTest1)"/>
+    </g>
+    <g transform="translate(-25, 0)">
+      <polygon points="0,-10 2.5,-3.5 10,-2.5 4,3 6,10 0,6 -6,10 -4,3 -10,-2.5 -2.5,-3.5" fill="#fbbf24" filter="url(#glowTest1)"/>
+    </g>
+    <g transform="translate(0, 0)">
+      <polygon points="0,-10 2.5,-3.5 10,-2.5 4,3 6,10 0,6 -6,10 -4,3 -10,-2.5 -2.5,-3.5" fill="#fbbf24" filter="url(#glowTest1)"/>
+    </g>
+    <g transform="translate(25, 0)">
+      <polygon points="0,-10 2.5,-3.5 10,-2.5 4,3 6,10 0,6 -6,10 -4,3 -10,-2.5 -2.5,-3.5" fill="#fbbf24" filter="url(#glowTest1)"/>
+    </g>
+    <g transform="translate(50, 0)">
+      <polygon points="0,-10 2.5,-3.5 10,-2.5 4,3 6,10 0,6 -6,10 -4,3 -10,-2.5 -2.5,-3.5" fill="#fbbf24" filter="url(#glowTest1)"/>
+    </g>
+  </g>
+  
+  <!-- Badge verificado más elaborado -->
+  <g transform="translate(275, 155)">
+    <circle cx="0" cy="0" r="24" fill="#10b981" opacity="0.95" filter="url(#glowTest1)"/>
+    <circle cx="0" cy="0" r="18" fill="#059669"/>
+    <path d="M -9 0 L -4 9 L 12 -9" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="0" cy="0" r="24" fill="none" stroke="#10b981" stroke-width="2" opacity="0.3"/>
+  </g>
+  
+  <!-- Partículas brillantes mejoradas -->
+  <circle cx="100" cy="200" r="4" fill="#10b981" opacity="0.7" filter="url(#glowTest1)">
+    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="300" cy="200" r="4" fill="#3b82f6" opacity="0.7" filter="url(#glowTest1)">
+    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="110" r="3" fill="#fbbf24" opacity="0.8" filter="url(#glowTest1)">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="130" cy="130" r="2" fill="#3b82f6" opacity="0.6">
+    <animate attributeName="cy" values="130;120;130" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="270" cy="270" r="2" fill="#10b981" opacity="0.6">
+    <animate attributeName="cy" values="270;260;270" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="150" cy="280" r="3" fill="#3b82f6" opacity="0.5">
+    <animate attributeName="cy" values="280;270;280" dur="4s" repeatCount="indefinite"/>
+  </circle>
+</svg>
