@@ -1,0 +1,121 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgIA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentIA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glowIA">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Fondo -->
+  <rect width="400" height="300" fill="url(#bgIA)"/>
+  
+  <!-- Elementos decorativos -->
+  <circle cx="80" cy="80" r="70" fill="#8b5cf6" opacity="0.1"/>
+  <circle cx="320" cy="220" r="80" fill="#3b82f6" opacity="0.1"/>
+  
+  <!-- Red neuronal central -->
+  <g transform="translate(200, 150)">
+    <!-- Capa 1 (entrada) -->
+    <circle cx="-80" cy="-40" r="8" fill="#8b5cf6" opacity="0.8" filter="url(#glowIA)">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="-80" cy="0" r="8" fill="#8b5cf6" opacity="0.8" filter="url(#glowIA)">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="-80" cy="40" r="8" fill="#8b5cf6" opacity="0.8" filter="url(#glowIA)">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Capa 2 (oculta) -->
+    <circle cx="-20" cy="-50" r="10" fill="url(#accentIA)" opacity="0.9" filter="url(#glowIA)">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="-20" cy="-15" r="10" fill="url(#accentIA)" opacity="0.9" filter="url(#glowIA)">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="-20" cy="15" r="10" fill="url(#accentIA)" opacity="0.9" filter="url(#glowIA)">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="-20" cy="50" r="10" fill="url(#accentIA)" opacity="0.9" filter="url(#glowIA)">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Capa 3 (salida) -->
+    <circle cx="60" cy="-25" r="8" fill="#3b82f6" opacity="0.8" filter="url(#glowIA)">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="60" cy="25" r="8" fill="#3b82f6" opacity="0.8" filter="url(#glowIA)">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Conexiones -->
+    <line x1="-80" y1="-40" x2="-20" y2="-50" stroke="#8b5cf6" stroke-width="1" opacity="0.4"/>
+    <line x1="-80" y1="-40" x2="-20" y2="-15" stroke="#8b5cf6" stroke-width="1" opacity="0.4"/>
+    <line x1="-80" y1="0" x2="-20" y2="-15" stroke="#8b5cf6" stroke-width="1" opacity="0.4"/>
+    <line x1="-80" y1="0" x2="-20" y2="15" stroke="#8b5cf6" stroke-width="1" opacity="0.4"/>
+    <line x1="-80" y1="40" x2="-20" y2="15" stroke="#8b5cf6" stroke-width="1" opacity="0.4"/>
+    <line x1="-80" y1="40" x2="-20" y2="50" stroke="#8b5cf6" stroke-width="1" opacity="0.4"/>
+    
+    <line x1="-20" y1="-50" x2="60" y2="-25" stroke="url(#accentIA)" stroke-width="1.5" opacity="0.5">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3s" repeatCount="indefinite"/>
+    </line>
+    <line x1="-20" y1="-15" x2="60" y2="-25" stroke="url(#accentIA)" stroke-width="1.5" opacity="0.5"/>
+    <line x1="-20" y1="15" x2="60" y2="25" stroke="url(#accentIA)" stroke-width="1.5" opacity="0.5"/>
+    <line x1="-20" y1="50" x2="60" y2="25" stroke="url(#accentIA)" stroke-width="1.5" opacity="0.5">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  
+  <!-- Cerebro estilizado -->
+  <g transform="translate(80, 100)">
+    <path d="M 0 0 Q -15 -20 0 -35 Q 15 -20 0 0" fill="none" stroke="#8b5cf6" stroke-width="2" opacity="0.6"/>
+    <path d="M 0 0 Q 15 -10 20 -25 Q 25 -10 20 0" fill="none" stroke="#8b5cf6" stroke-width="2" opacity="0.6"/>
+    <circle cx="10" cy="-15" r="3" fill="#8b5cf6" opacity="0.8">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Datos binarios -->
+  <g transform="translate(300, 80)">
+    <text x="0" y="0" font-family="monospace" font-size="14" fill="#3b82f6" opacity="0.6">1010</text>
+    <text x="0" y="20" font-family="monospace" font-size="14" fill="#8b5cf6" opacity="0.6">0110</text>
+    <text x="0" y="40" font-family="monospace" font-size="14" fill="#3b82f6" opacity="0.6">1101</text>
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Chip/procesador -->
+  <g transform="translate(320, 200)">
+    <rect x="-25" y="-25" width="50" height="50" rx="4" fill="#0f172a" stroke="url(#accentIA)" stroke-width="2" filter="url(#glowIA)"/>
+    <rect x="-15" y="-15" width="30" height="30" rx="2" fill="url(#accentIA)" opacity="0.3"/>
+    
+    <!-- Pines del chip -->
+    <line x1="-25" y1="-15" x2="-30" y2="-15" stroke="#8b5cf6" stroke-width="2"/>
+    <line x1="-25" y1="0" x2="-30" y2="0" stroke="#8b5cf6" stroke-width="2"/>
+    <line x1="-25" y1="15" x2="-30" y2="15" stroke="#8b5cf6" stroke-width="2"/>
+    
+    <line x1="25" y1="-15" x2="30" y2="-15" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="25" y1="0" x2="30" y2="0" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="25" y1="15" x2="30" y2="15" stroke="#3b82f6" stroke-width="2"/>
+  </g>
+  
+  <!-- Partículas de datos -->
+  <circle cx="150" cy="80" r="3" fill="#8b5cf6" opacity="0.7">
+    <animate attributeName="cy" values="80;60;80" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="250" cy="220" r="3" fill="#3b82f6" opacity="0.7">
+    <animate attributeName="cy" values="220;200;220" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>

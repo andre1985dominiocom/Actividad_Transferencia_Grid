@@ -1,0 +1,71 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgProg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentProg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glowProg">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Fondo -->
+  <rect width="400" height="300" fill="url(#bgProg)"/>
+  
+  <!-- Elementos decorativos -->
+  <circle cx="50" cy="50" r="60" fill="#10b981" opacity="0.1"/>
+  <circle cx="350" cy="250" r="80" fill="#3b82f6" opacity="0.1"/>
+  
+  <!-- Ventana de código principal -->
+  <rect x="80" y="60" width="240" height="180" rx="8" fill="#0f172a" stroke="url(#accentProg)" stroke-width="2" filter="url(#glowProg)"/>
+  
+  <!-- Barra superior de ventana -->
+  <rect x="80" y="60" width="240" height="25" rx="8" fill="url(#accentProg)" opacity="0.3"/>
+  <circle cx="95" cy="72.5" r="4" fill="#ef4444"/>
+  <circle cx="110" cy="72.5" r="4" fill="#f59e0b"/>
+  <circle cx="125" cy="72.5" r="4" fill="#10b981"/>
+  
+  <!-- Líneas de código -->
+  <rect x="95" y="100" width="60" height="6" rx="3" fill="#3b82f6" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="160" y="100" width="40" height="6" rx="3" fill="#10b981" opacity="0.6"/>
+  <rect x="205" y="100" width="90" height="6" rx="3" fill="#8b5cf6" opacity="0.6"/>
+  
+  <rect x="95" y="120" width="80" height="6" rx="3" fill="#10b981" opacity="0.6"/>
+  <rect x="180" y="120" width="50" height="6" rx="3" fill="#3b82f6" opacity="0.6"/>
+  <rect x="235" y="120" width="30" height="6" rx="3" fill="#f59e0b" opacity="0.6"/>
+  
+  <rect x="110" y="140" width="70" height="6" rx="3" fill="#8b5cf6" opacity="0.6"/>
+  <rect x="185" y="140" width="60" height="6" rx="3" fill="#10b981" opacity="0.6"/>
+  
+  <rect x="110" y="160" width="90" height="6" rx="3" fill="#3b82f6" opacity="0.6"/>
+  <rect x="205" y="160" width="40" height="6" rx="3" fill="#f59e0b" opacity="0.6"/>
+  
+  <rect x="95" y="180" width="50" height="6" rx="3" fill="#10b981" opacity="0.6"/>
+  <rect x="150" y="180" width="80" height="6" rx="3" fill="#8b5cf6" opacity="0.6"/>
+  
+  <rect x="95" y="200" width="100" height="6" rx="3" fill="#3b82f6" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Símbolos de código flotantes -->
+  <text x="45" y="130" font-family="monospace" font-size="24" fill="#10b981" opacity="0.6" font-weight="bold">&lt;/&gt;</text>
+  <text x="335" y="100" font-family="monospace" font-size="20" fill="#3b82f6" opacity="0.5" font-weight="bold">{ }</text>
+  <text x="340" y="200" font-family="monospace" font-size="22" fill="#8b5cf6" opacity="0.5" font-weight="bold">[ ]</text>
+  
+  <!-- Cursor parpadeante -->
+  <rect x="200" y="198" width="3" height="10" fill="#10b981">
+    <animate attributeName="opacity" values="0;1;0" dur="1s" repeatCount="indefinite"/>
+  </rect>
+</svg>

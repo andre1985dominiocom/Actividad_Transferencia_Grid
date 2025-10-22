@@ -1,0 +1,47 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Libro abierto estilizado -->
+  <path d="M 100 70 Q 80 80 60 85 L 60 130 Q 80 125 100 120 Z" fill="url(#gradiente)" opacity="0.9"/>
+  <path d="M 100 70 Q 120 80 140 85 L 140 130 Q 120 125 100 120 Z" fill="url(#gradiente)" opacity="0.7"/>
+  
+  <!-- Líneas de páginas -->
+  <line x1="70" y1="95" x2="90" y2="93" stroke="white" stroke-width="1.5" opacity="0.6"/>
+  <line x1="70" y1="103" x2="90" y2="101" stroke="white" stroke-width="1.5" opacity="0.6"/>
+  <line x1="70" y1="111" x2="90" y2="109" stroke="white" stroke-width="1.5" opacity="0.6"/>
+  
+  <line x1="110" y1="93" x2="130" y2="95" stroke="white" stroke-width="1.5" opacity="0.6"/>
+  <line x1="110" y1="101" x2="130" y2="103" stroke="white" stroke-width="1.5" opacity="0.6"/>
+  <line x1="110" y1="109" x2="130" y2="111" stroke="white" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Círculo de fondo -->
+  <circle cx="100" cy="100" r="75" fill="none" stroke="url(#gradiente)" stroke-width="3" opacity="0.3"/>
+  
+  <!-- Estrella/brillo educativo -->
+  <circle cx="130" cy="75" r="4" fill="#fbbf24" opacity="0.9"/>
+  <circle cx="125" cy="80" r="2.5" fill="#fbbf24" opacity="0.7"/>
+  <circle cx="135" cy="81" r="2" fill="#fbbf24" opacity="0.7"/>
+  
+  <!-- Texto distribuido en arco superior: CIENCIA -->
+  <path id="arcoSuperior" d="M 40 100 A 60 60 0 0 1 160 100" fill="none"/>
+  <text font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="url(#gradiente)" letter-spacing="3">
+    <textPath href="#arcoSuperior" startOffset="50%" text-anchor="middle">
+      CIENCIA
+    </textPath>
+  </text>
+  
+  <!-- Texto izquierda: SABIDURÍA -->
+  <text x="20" y="105" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="url(#gradiente)" text-anchor="middle" transform="rotate(-90 20 105)">
+    SABIDURÍA
+  </text>
+  
+  <!-- Texto derecha: PODER -->
+  <text x="180" y="105" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="url(#gradiente)" text-anchor="middle" transform="rotate(90 180 105)">
+    PODER
+  </text>
+</svg>
