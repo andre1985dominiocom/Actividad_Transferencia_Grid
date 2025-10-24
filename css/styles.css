@@ -216,3 +216,108 @@ body {
     color: var(--text-color);
     text-align: center;
 }
+
+.formulario-contacto {
+    padding: 40px;
+    background-color: var(--background-color);
+    border-top: 1px solid #eee;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+    grid-auto-flow: dense;
+    align-items: center;
+    justify-items: center;
+}
+
+.formulario-contacto__titulo {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.formulario-contacto__label {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    justify-self: center;
+}
+
+.formulario-contacto__input, .formulario-contacto__textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: var(--button-border-radius);
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+.formulario-contacto__boton {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: var(--button-border-radius);
+    padding: var(--button-padding);
+    cursor: pointer;
+}
+
+.formulario-contacto__boton:hover {
+    background-color: var(--background-color);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pie-pagina {
+    padding: 20px 50px;
+    background-color: #5555552d;
+    color: var(--text-color);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+}
+
+.pie-pagina__texto {
+    font-size: 0.9em;
+}
+
+.pie-pagina__menu {
+    justify-self:end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.pie-pagina__enlace {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.pie-pagina__redes {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    justify-self: start;
+    align-items: center;
+}
+
+.pie-pagina__redes-lista ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.pie-pagina__redes-lista ul li {
+    color: var(--text-color);
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.pie-pagina__redes-lista img {
+    width: 24px;
+    height: 24px;
+}

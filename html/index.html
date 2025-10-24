@@ -100,5 +100,47 @@
             </article>
         </div>
     </section>
+    <form class="formulario-contacto">
+        <h2 class="formulario-contacto__titulo">Contáctanos</h2>
+        <label for="nombre" class="formulario-contacto__label">Nombre y Apellido:</label>
+        <input type="text" id="nombre" name="nombre" class="formulario-contacto__input" required>
+        <label for="email" class="formulario-contacto__label">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" class="formulario-contacto__input" required>
+        <label for="mensaje" class="formulario-contacto__label">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" class="formulario-contacto__textarea" required></textarea>
+        <button type="submit" class="formulario-contacto__boton">Enviar</button>
+    </form>
+    <footer class="pie-pagina">
+        <div class="pie-pagina__redes">
+            <ul class="pie-pagina__redes-lista">
+                <li>
+                    <a href="#" aria-label="Facebook">
+                        <img src="/imagenes/social_facebook_fb_35.png" alt="Icono de Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="WhatsApp">
+                        <img src="/imagenes/whatsapp-logo_icon-icons.com_57054.png" alt="Icono de WhatsApp">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Instagram">
+                        <img src="/imagenes/instagram_black_logo_icon_147122.png" alt="Icono de Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Twitter">
+                        <img src="/imagenes/twitter_x_new_logo_x_rounded_icon_256078.png" alt="Icono de Twitter">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p class="pie-pagina__texto">© 2025 Plataforma Educativa. Todos los derechos reservados.</p>
+        <nav class="pie-pagina__menu">
+            <a href="/privacidad.html" class="pie-pagina__enlace">Política de Privacidad</a>
+            <a href="/terminos.html" class="pie-pagina__enlace">Términos de Servicio</a>
+            <a href="/ayuda.html" class="pie-pagina__enlace">Ayuda</a>
+        </nav>
+    </footer>
 </body>
 </html>
